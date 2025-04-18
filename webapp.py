@@ -117,7 +117,7 @@ def error_log(df, time_col='TIMESTAMP', threshold_min=40):
     
     # Find most recent timestamp
     recent_ts = df[time_col].max()
-    now = datetime.now()    
+    now = datetime.now() - timedelta(hours=7) 
     delta = now - recent_ts
     
     # Display status (green if recent)
@@ -131,7 +131,7 @@ def error_log(df, time_col='TIMESTAMP', threshold_min=40):
         return f"**<span style='color:green'>✅ Recent data: {msg}</span>**", warning
 
 # Error message and download button
-error_msg, warning = error_log(df, time_col='TIMESTAMP', threshold_min=460)
+error_msg, warning = error_log(df, time_col='TIMESTAMP', threshold_min=40)
 
 # Display the error message and CSV download button at the top
 col1, col2 = st.columns([4, 1])
