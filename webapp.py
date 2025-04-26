@@ -27,7 +27,7 @@ for col in df.columns:
 
 # 2. Calibration
 def ToppEq(x):
-    return 4.3e-6 * x**3 - 5.5e-4 * x**2 + 2.92e-2 * x - 5.3e-2
+    return (4.3e-6 * x**3 - 5.5e-4 * x**2 + 2.92e-2 * x - 5.3e-2)*100
 
 cal = {"DateTime" : df["TIMESTAMP"],
     # TEMPS
