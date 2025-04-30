@@ -68,9 +68,9 @@ cal = {"DateTime" : df["TIMESTAMP"],
     "HiC Dry Blue Lower VWC": ToppEq(df["e(6)"]),
     "HiC Wet Green Upper VWC": ToppEq(df["e(7)"]),
     "HiC Wet Green Lower VWC": ToppEq(df["e(8)"]),
-    "HiC Wet Green Upper VWC": df["VW(9)"]*100, # Analog sensor
+    "HiC Wet Green Upper VWC": df["VW_9"]*100, # Analog sensor
     "HiC Wet Green Lower VWC": ToppEq(df["e(10)"]),
-    "HiC Dry Black Upper VWC": df["VW(11)"]*100, # Analog sensor
+    "HiC Dry Black Upper VWC": df["VW_11"]*100, # Analog sensor
     "HiC Dry Black Lower VWC": ToppEq(df["e(12)"]),
     "LoC Wet Blue Upper VWC": ToppEq(df["e_2(1)"]),
     "LoC Wet Blue Lower VWC": ToppEq(df["e_2(2)"]),
