@@ -32,58 +32,58 @@ def ToppEq(x):
 cal = {"DateTime" : df["TIMESTAMP"],
   
     # T
-    "HiC Wet Black Upper Temp": df["T(1)"],
-    "HiC Wet Black Lower Temp": df["T(2)"],
-    "HiC Dry Red Upper Temp": df["T(3)"],
-    "HiC Dry Red Lower Temp": df["T(4)"],
-    "HiC Dry Blue Upper Temp": df["T(5)"],
-    "HiC Dry Blue Lower Temp": df["T(6)"],
-    "HiC Wet Green Upper Temp": df["T(7)"],
-    "HiC Wet Green Lower Temp": df["T(8)"],
-    # Doesn't exist "HiC Wet Green Upper Temp": df["T(9)"],
-    "HiC Wet Green Lower Temp": df["T(10)"],
-    # Doesn't exist "HiC Dry Black Upper Temp": df["T(11)"],
-    "HiC Dry Black Lower Temp": df["T(12)"],
+    "HiC Wet PISA Upper Temp": df["T(1)"],
+    "HiC Wet PISA Lower Temp": df["T(2)"],
+    "HiC Dry QUWI Upper Temp": df["T(3)"],
+    "HiC Dry QUWI Lower Temp": df["T(4)"],
+    "HiC Dry PIPO Upper Temp": df["T(5)"],
+    "HiC Dry PIPO Lower Temp": df["T(6)"],
+    "HiC Wet QUCH Upper Temp": df["T(7)"],
+    "HiC Wet QUCH Lower Temp": df["T(8)"],
+    # Doesn't exist "HiC Wet QUCH Upper Temp": df["T(9)"],
+    "HiC Wet QUCH Lower Temp": df["T(10)"],
+    # Doesn't exist "HiC Dry PISA Upper Temp": df["T(11)"],
+    "HiC Dry PISA Lower Temp": df["T(12)"],
     
-    "LoC Wet Blue Upper Temp": df["T_2(1)"],
-    "LoC Wet Blue Lower Temp": df["T_2(2)"],
-    "LoC Dry Black Upper Temp": df["T_2(3)"],
-    "LoC Dry Black Lower Temp": df["T_2(4)"],
-    "LoC Wet Red Upper Temp": df["T_2(5)"],
-    "LoC Wet Red Lower Temp": df["T_2(6)"],
-    "LoC Wet Red Upper Temp": df["T_2(7)"],
-    "LoC Wet Red Lower Temp": df["T_2(8)"],
-    "LoC Wet Green Lower Temp": df["T_2(9)"],
-    "LoC Wet Green Upper Temp": df["T_2(10)"],
-    "LoC Dry Black Upper Temp": df["T_2(11)"],
-    "LoC Dry Black Lower Temp": df["T_2(12)"],
+    "LoC Wet PIPO Upper Temp": df["T_2(1)"],
+    "LoC Wet PIPO Lower Temp": df["T_2(2)"],
+    "LoC Dry PISA Upper Temp": df["T_2(3)"],
+    "LoC Dry PISA Lower Temp": df["T_2(4)"],
+    "LoC Wet QUWI Upper Temp": df["T_2(5)"],
+    "LoC Wet QUWI Lower Temp": df["T_2(6)"],
+    "LoC Wet QUWI Upper Temp": df["T_2(7)"],
+    "LoC Wet QUWI Lower Temp": df["T_2(8)"],
+    "LoC Wet QUCH Lower Temp": df["T_2(9)"],
+    "LoC Wet QUCH Upper Temp": df["T_2(10)"],
+    "LoC Dry PISA Upper Temp": df["T_2(11)"],
+    "LoC Dry PISA Lower Temp": df["T_2(12)"],
 
 
     # VWC
-    "HiC Wet Black Upper VWC": ToppEq(df["e(1)"]),
-    "HiC Wet Black Lower VWC": ToppEq(df["e(2)"]),
-    "HiC Dry Red Upper VWC": ToppEq(df["e(3)"]),
-    "HiC Dry Red Lower VWC": ToppEq(df["e(4)"]),
-    "HiC Dry Blue Upper VWC": ToppEq(df["e(5)"]),
-    "HiC Dry Blue Lower VWC": ToppEq(df["e(6)"]),
-    "HiC Wet Green Upper VWC": ToppEq(df["e(7)"]),
-    "HiC Wet Green Lower VWC": ToppEq(df["e(8)"]),
-    "HiC Wet Green Upper VWC": df["VW_9"]*100, # Analog sensor
-    "HiC Wet Green Lower VWC": ToppEq(df["e(10)"]),
-    "HiC Dry Black Upper VWC": df["VW_11"]*100, # Analog sensor
-    "HiC Dry Black Lower VWC": ToppEq(df["e(12)"]),
-    "LoC Wet Blue Upper VWC": ToppEq(df["e_2(1)"]),
-    "LoC Wet Blue Lower VWC": ToppEq(df["e_2(2)"]),
-    "LoC Dry Black Upper VWC": ToppEq(df["e_2(3)"]),
-    "LoC Dry Black Lower VWC": ToppEq(df["e_2(4)"]),
-    "LoC Wet Red Upper VWC": ToppEq(df["e_2(5)"]),
-    "LoC Wet Red Lower VWC": ToppEq(df["e_2(6)"]),
-    "LoC Wet Red Upper VWC": ToppEq(df["e_2(7)"]),
-    "LoC Wet Red Lower VWC": ToppEq(df["e_2(8)"]),
-    "LoC Wet Green Lower VWC": ToppEq(df["e_2(9)"]),
-    "LoC Wet Green Upper VWC": ToppEq(df["e_2(10)"]),
-    "LoC Dry Black Upper VWC": ToppEq(df["e_2(11)"]),
-    "LoC Dry Black Lower VWC": ToppEq(df["e_2(12)"]),
+    "HiC Wet PISA Upper VWC": ToppEq(df["e(1)"]),
+    "HiC Wet PISA Lower VWC": ToppEq(df["e(2)"]),
+    "HiC Dry QUWI Upper VWC": ToppEq(df["e(3)"]),
+    "HiC Dry QUWI Lower VWC": ToppEq(df["e(4)"]),
+    "HiC Dry PIPO Upper VWC": ToppEq(df["e(5)"]),
+    "HiC Dry PIPO Lower VWC": ToppEq(df["e(6)"]),
+    "HiC Wet QUCH Upper VWC": ToppEq(df["e(7)"]),
+    "HiC Wet QUCH Lower VWC": ToppEq(df["e(8)"]),
+    "HiC Wet QUCH Upper VWC": df["VW_9"]*100, # Analog sensor
+    "HiC Wet QUCH Lower VWC": ToppEq(df["e(10)"]),
+    "HiC Dry PISA Upper VWC": df["VW_11"]*100, # Analog sensor
+    "HiC Dry PISA Lower VWC": ToppEq(df["e(12)"]),
+    "LoC Wet PIPO Upper VWC": ToppEq(df["e_2(1)"]),
+    "LoC Wet PIPO Lower VWC": ToppEq(df["e_2(2)"]),
+    "LoC Dry PISA Upper VWC": ToppEq(df["e_2(3)"]),
+    "LoC Dry PISA Lower VWC": ToppEq(df["e_2(4)"]),
+    "LoC Wet QUWI Upper VWC": ToppEq(df["e_2(5)"]),
+    "LoC Wet QUWI Lower VWC": ToppEq(df["e_2(6)"]),
+    "LoC Wet QUWI Upper VWC": ToppEq(df["e_2(7)"]),
+    "LoC Wet QUWI Lower VWC": ToppEq(df["e_2(8)"]),
+    "LoC Wet QUCH Lower VWC": ToppEq(df["e_2(9)"]),
+    "LoC Wet QUCH Upper VWC": ToppEq(df["e_2(10)"]),
+    "LoC Dry PISA Upper VWC": ToppEq(df["e_2(11)"]),
+    "LoC Dry PISA Lower VWC": ToppEq(df["e_2(12)"]),
 
 
 }
@@ -125,15 +125,15 @@ def error_log(df, time_col='TIMESTAMP', threshold_min=100):
     now = datetime.now() - timedelta(hours=7) 
     delta = now - recent_ts
     
-    # Display status (green if recent)
+    # Display status (QUCH if recent)
     warning = delta > timedelta(minutes=threshold_min)
     msg = (f"Last data point @ {recent_ts} — "
            f"{int(delta.total_seconds()//60)} min {int(delta.total_seconds()%60)} s ago")
     
     if warning:
-        return f"**<span style='color:red'>⚠️  STALE DATA: {msg}</span>**", warning
+        return f"**<span style='color:QUWI'>⚠️  STALE DATA: {msg}</span>**", warning
     else:
-        return f"**<span style='color:green'>✅ Recent data: {msg}</span>**", warning
+        return f"**<span style='color:QUCH'>✅ Recent data: {msg}</span>**", warning
 
 # Error message and download button
 error_msg, warning = error_log(df, time_col='TIMESTAMP', threshold_min=40)
