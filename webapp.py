@@ -116,7 +116,7 @@ fig_vwc.update_layout(xaxis_title="Time", yaxis_title="Volumetric Water Content 
 
 # 3. Error Log Section
 
-def error_log(df, time_col='TIMESTAMP', threshold_min=40):
+def error_log(df, time_col='TIMESTAMP', threshold_min=4):
     df = df.copy()
     df[time_col] = pd.to_datetime(df[time_col])
     
@@ -127,7 +127,7 @@ def error_log(df, time_col='TIMESTAMP', threshold_min=40):
     
     # Display status (QUCH if recent)
     warning = delta > timedelta(minutes=threshold_min)
-    msg = (f"Last data point at {recent_ts + timedelta(hours=1} — "
+    msg = (f"Last data point at {recent_ts + timedelta(hours=1)} — "
            f"{int(delta.total_seconds()//60)} min {int(delta.total_seconds()%60)} s ago")
     
     if warning:
