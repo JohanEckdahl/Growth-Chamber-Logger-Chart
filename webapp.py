@@ -116,7 +116,7 @@ fig_vwc.update_layout(xaxis_title="Time", yaxis_title="Volumetric Water Content 
 
 # 3. Error Log Section
 
-def error_log(df, time_col='TIMESTAMP', threshold_min):
+def error_log(df, time_col='TIMESTAMP', threshold_min=4):
     df = df.copy()
     df[time_col] = pd.to_datetime(df[time_col])
     
