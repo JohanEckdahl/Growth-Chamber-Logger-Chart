@@ -116,7 +116,7 @@ fig_vwc.update_layout(xaxis_title="Time", yaxis_title="Volumetric Water Content 
 
 # 3. Error Log Section
 
-def error_log(df, time_col='TIMESTAMP', threshold_min=4):
+def error_log(df, time_col='TIMESTAMP', threshold_min):
     df = df.copy()
     df[time_col] = pd.to_datetime(df[time_col])
     
@@ -136,7 +136,7 @@ def error_log(df, time_col='TIMESTAMP', threshold_min=4):
         return f"**<span style='color:green'>✅ Recent data: {msg}</span>**", warning
 
 # Error message and download button
-error_msg, warning = error_log(df, time_col='TIMESTAMP', threshold_min=40)
+error_msg, warning = error_log(df, time_col='TIMESTAMP', threshold_min=4)
 
 # Display the error message and CSV download button at the top
 col1, col2 = st.columns([4, 1])
