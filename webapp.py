@@ -165,12 +165,7 @@ st.plotly_chart(fig_vwc, use_container_width=True)
 # 4. Error List Section (Columns with NaN or 0 Values)
 def find_errors(df):
     errors = []
-    # These columns don't have anything hooked up
-    skip_columns = ["T(9)", "T(11)", "e(9)", "e(11)"]
-    
     for col in df.columns:
-        if col in skip_columns:
-            continue
         if df[col].isna().any() or (df[col] == 0).any():
             error_rows = df[df[col].isna() | (df[col] == 0)]
             for _, row in error_rows.iterrows():
